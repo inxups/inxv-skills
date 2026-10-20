@@ -1,6 +1,6 @@
 # Route Recovery
 
-[中文说明](README.CN.md)
+[中文说明](README.zh_CN.md)
 
 Route Recovery is a skill for long-running coding tasks.
 
