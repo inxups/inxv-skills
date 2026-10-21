@@ -17,13 +17,13 @@ Read existing files before editing them. Preserve the confirmed structure and ex
 
 ## Read the documentation
 
-Use the [official STYLE documentation](https://style.pixulse.com/docs/) for specifications and examples. Read the sections needed for the task. Do not maintain a local copy of the manual.
+Use the official STYLE documentation for specifications and examples. Fetch the Markdown pages below, not the HTML site, which renders client-side. [llms.txt](https://style.pixulse.com/llms.txt) lists every page. Read the pages needed for the task. Do not maintain a local copy of the manual.
 
-- Read [basics](https://style.pixulse.com/docs/basics/) for package formats and authoring workflows.
-- Read [package fields](https://style.pixulse.com/docs/package/) for metadata, dependencies, settings, budgets, and defaults.
-- Read [rules](https://style.pixulse.com/docs/rules/) for sources, content, targets, actions, conditions, and fallback behavior.
-- Read [native hooks](https://style.pixulse.com/docs/hooks/) when the package must run commands or scripts.
-- Read [commands and diagnostics](https://style.pixulse.com/docs/reference/) for CLI usage and reported errors.
+- Read [overview](https://style.pixulse.com/docs/style-yaml/overview.md) and [authoring](https://style.pixulse.com/docs/style-yaml/authoring.md) for package formats and authoring workflows.
+- Read [package](https://style.pixulse.com/docs/style-yaml/package.md), [requires](https://style.pixulse.com/docs/style-yaml/requires.md), [budget](https://style.pixulse.com/docs/style-yaml/budget.md), and [defaults](https://style.pixulse.com/docs/style-yaml/defaults.md) for metadata, dependencies, settings, budgets, and defaults.
+- Read [rules](https://style.pixulse.com/docs/style-yaml/rules.md), [target](https://style.pixulse.com/docs/style-yaml/target.md), [action](https://style.pixulse.com/docs/style-yaml/action.md), [when](https://style.pixulse.com/docs/style-yaml/when.md), and [fallback](https://style.pixulse.com/docs/style-yaml/fallback.md) for sources, content, targets, actions, conditions, and fallback behavior.
+- Read [native hooks](https://style.pixulse.com/docs/style-yaml/native-hooks.md) when the package must run commands or scripts.
+- Read [CLI](https://style.pixulse.com/docs/style-yaml/cli.md) and [diagnostics](https://style.pixulse.com/docs/style-yaml/diagnostics.md) for CLI usage and reported errors.
 
 Check `command -v style`, `style --version`, and `style --help` to identify the executable. Use `style help COMMAND` to check its options. If the binary differs from the documentation, explain the difference and use the features that version supports. If the website is unavailable, identify the details you could not verify. If the CLI is unavailable, write the confirmed package and report that validation was not run. Do not install dependencies without authorization.
 

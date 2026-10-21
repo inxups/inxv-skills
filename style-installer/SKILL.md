@@ -5,7 +5,7 @@ description: Install, link, update, sync, restore, remove, or troubleshoot STYLE
 
 # STYLE installer
 
-Use the [official CLI reference](https://style.pixulse.com/docs/reference/#cli) for the requested operation. Do not maintain a local manual. Check `style --version` and `style help COMMAND` before running commands.
+Use the official [CLI reference](https://style.pixulse.com/docs/style-yaml/cli.md) and [diagnostics table](https://style.pixulse.com/docs/style-yaml/diagnostics.md) for the requested operation. These are Markdown pages; the HTML site renders client-side and is unreadable to fetch tools. Do not maintain a local manual. Check `style --version` and `style help COMMAND` before running commands.
 
 ## Workflow
 
@@ -32,5 +32,5 @@ Use the [official CLI reference](https://style.pixulse.com/docs/reference/#cli) 
 - Check source syntax, `--set`, routes, and advanced options in the documentation. Replace system instructions or enable `--fail-closed` only when the user intends that behavior. Do not alter rules or budgets to make installation pass.
 - `--json` controls output format. Use `plan` to preview without applying changes. The CLI has no `--yes` option. Do not supply an unconditional stream of approvals.
 - `sync` may write without prompting. Canceling approval partway through does not roll back packages already applied. Use `update` to refresh copied installations from their original sources.
-- Check the exit code, `status`, `diagnostics`, and `result`. A failed command may have written files. `registration-required` means the files exist but registration remains incomplete. Follow the report within the authorized scope.
+- Check the exit code, `status`, `diagnostics`, and `result`. A failed command may have written files, and exit code 0 can still carry warnings. `registration-required` (an error for some plugin routes, a warning for others) and `refresh-required` mean the files exist but the harness has not loaded the current plugin. Follow the report's registration commands within the authorized scope.
 - Do not use `doctor --reset-state` for routine verification. Do not report a successful preview as an active installation.
